@@ -125,7 +125,7 @@ function handleMovement(x, y) {
 }
 
 function handlePush(x, y, bx, by) {
-    if (dashmap[x][y] == 3 && dashmap[bx][by] == 0) {
+    if (dashmap[x][y] == 3 && dashmap[bx][by] == 0 && by >= y) {
         playerIsMoving = true;
         playerDestX = x;
         playerDestY = y;
